@@ -23,11 +23,11 @@
 
         <Label style="-fx-text-fill: #B0B0B0;                       -fx-font-size: 16px;" text="Gerenciamento de Campeonatos" />
 
-        <Button prefHeight="40" prefWidth="250" style="-fx-background-color: #FF7A00;                        -fx-text-fill: white;                        -fx-font-size: 14px;                        -fx-font-weight: bold;" text="Cadastrar Times" />
+        <Button prefHeight="40" prefWidth="250" style="-fx-background-color: #4f46e5;                        -fx-text-fill: white;                        -fx-font-size: 14px;                        -fx-font-weight: bold;" text="Cadastrar Times" />
 
-        <Button prefHeight="40" prefWidth="250" style="-fx-background-color: #FF7A00;                        -fx-text-fill: white;                        -fx-font-size: 14px;                        -fx-font-weight: bold;" text="Gerenciar Partidas" />
+        <Button prefHeight="40" prefWidth="250" style="-fx-background-color: #4f46e5;                        -fx-text-fill: white;                        -fx-font-size: 14px;                        -fx-font-weight: bold;" text="Gerenciar Partidas" />
 
-        <Button prefHeight="40" prefWidth="250" style="-fx-background-color: #FF7A00;                        -fx-text-fill: white;                        -fx-font-size: 14px;                        -fx-font-weight: bold;" text="Tabela de Classificação" />
+        <Button prefHeight="40" prefWidth="250" style="-fx-background-color: #4f46e5;                        -fx-text-fill: white;                        -fx-font-size: 14px;                        -fx-font-weight: bold;" text="Tabela de Classificação" />
 
         <Button prefHeight="40" prefWidth="250" style="-fx-background-color: #C62828;                        -fx-text-fill: white;                        -fx-font-size: 14px;                        -fx-font-weight: bold;" text="Sair" />
 

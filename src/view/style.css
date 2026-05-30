@@ -1,0 +1,131 @@
+/* Definições Raiz e Tipografia Modernas */
+.root {
+    -fx-background-color: #0B0E14; /* Um preto ainda mais profundo para contraste */
+    -fx-font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Painéis com Efeito Glassmorphism (Vidro Jateado) */
+.glass-panel {
+    -fx-background-color: rgba(26, 29, 36, 0.6);
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 30, 0, 0, 15);
+}
+
+/* Títulos Principais Neon */
+.label-master-title {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, rgba(79, 70, 229, 0.5), 15, 0, 0, 0); /* Brilho Neon Azul */
+}
+
+/* Labels de Campos */
+.label-field {
+    -fx-text-fill: #A0AEC0;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 5 0;
+}
+
+/* Entradas de Texto Premium (Neomorfismo Sutil) */
+.text-field, .combo-box {
+    -fx-background-color: #12151B;
+    -fx-background-radius: 10;
+    -fx-border-color: #2D3748;
+    -fx-border-radius: 10;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #FFFFFF;
+    -fx-prompt-text-fill: #718096;
+    -fx-padding: 12 16;
+    -fx-font-size: 14px;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 1, 1);
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #4f46e5;
+    -fx-background-color: #161A22;
+    -fx-effect: dropshadow(three-pass-box, rgba(79, 70, 229, 0.4), 10, 0, 0, 0);
+}
+
+/* Botão Primário Magnético */
+.btn-primary-magnetic {
+    -fx-background-color: linear-gradient(to right bottom, #4f46e5, #7c3aed);
+    -fx-background-radius: 12;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-padding: 14 28;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(79, 70, 229, 0.6), 20, 0, 0, 5);
+}
+
+.btn-primary-magnetic:hover {
+    -fx-background-color: linear-gradient(to right bottom, #6366F1, #8B5CF6);
+    -fx-effect: dropshadow(three-pass-box, rgba(124, 58, 237, 0.8), 25, 0, 0, 8);
+}
+
+/* Botão Secundário Minimalista */
+.btn-secondary-ghost {
+    -fx-background-color: transparent;
+    -fx-background-radius: 12;
+    -fx-border-color: #4A5568;
+    -fx-border-radius: 12;
+    -fx-border-width: 2;
+    -fx-text-fill: #A0AEC0;
+    -fx-font-weight: bold;
+    -fx-padding: 14 28;
+    -fx-cursor: hand;
+}
+
+.btn-secondary-ghost:hover {
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Tabela Dark Premium (Estilo Leaderboard Esports) */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #2D3748;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #12151B;
+    -fx-background-radius: 12 12 0 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4f46e5; /* Azul Original nos cabeçalhos */
+    -fx-font-weight: bold;
+    -fx-size: 45;
+    -fx-border-color: transparent transparent #2D3748 transparent;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #161A22;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: transparent transparent #1C212B transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #1A1E26;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #242933; /* Destaque ao passar o mouse */
+    -fx-effect: innershadow(three-pass-box, rgba(79, 70, 229, 0.1), 10, 0, 0, 0);
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #2D3748;
+    -fx-text-fill: #4f46e5;
+}
