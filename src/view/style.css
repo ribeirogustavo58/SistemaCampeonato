@@ -1,10 +1,9 @@
-/* Definições Raiz e Tipografia Modernas */
+
 .root {
-    -fx-background-color: #0B0E14; /* Um preto ainda mais profundo para contraste */
+    -fx-background-color: #0B0E14;
     -fx-font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
 }
 
-/* Painéis com Efeito Glassmorphism (Vidro Jateado) */
 .glass-panel {
     -fx-background-color: rgba(26, 29, 36, 0.6);
     -fx-background-radius: 16;
@@ -14,7 +13,7 @@
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 30, 0, 0, 15);
 }
 
-/* Títulos Principais Neon */
+
 .label-master-title {
     -fx-text-fill: #FFFFFF;
     -fx-font-size: 32px;
@@ -23,7 +22,7 @@
     -fx-effect: dropshadow(three-pass-box, rgba(79, 70, 229, 0.5), 15, 0, 0, 0); /* Brilho Neon Azul */
 }
 
-/* Labels de Campos */
+
 .label-field {
     -fx-text-fill: #A0AEC0;
     -fx-font-size: 14px;
@@ -31,7 +30,7 @@
     -fx-padding: 0 0 5 0;
 }
 
-/* Entradas de Texto Premium (Neomorfismo Sutil) */
+
 .text-field, .combo-box {
     -fx-background-color: #12151B;
     -fx-background-radius: 10;
@@ -51,7 +50,7 @@
     -fx-effect: dropshadow(three-pass-box, rgba(79, 70, 229, 0.4), 10, 0, 0, 0);
 }
 
-/* Botão Primário Magnético */
+
 .btn-primary-magnetic {
     -fx-background-color: linear-gradient(to right bottom, #4f46e5, #7c3aed);
     -fx-background-radius: 12;
@@ -68,7 +67,7 @@
     -fx-effect: dropshadow(three-pass-box, rgba(124, 58, 237, 0.8), 25, 0, 0, 8);
 }
 
-/* Botão Secundário Minimalista */
+
 .btn-secondary-ghost {
     -fx-background-color: transparent;
     -fx-background-radius: 12;
@@ -87,7 +86,7 @@
     -fx-background-color: rgba(255, 255, 255, 0.03);
 }
 
-/* Tabela Dark Premium (Estilo Leaderboard Esports) */
+
 .table-view {
     -fx-background-color: transparent;
     -fx-border-color: #2D3748;
@@ -103,7 +102,7 @@
 
 .table-view .column-header {
     -fx-background-color: transparent;
-    -fx-text-fill: #4f46e5; /* Azul Original nos cabeçalhos */
+    -fx-text-fill: #4f46e5;
     -fx-font-weight: bold;
     -fx-size: 45;
     -fx-border-color: transparent transparent #2D3748 transparent;
@@ -121,7 +120,7 @@
 }
 
 .table-view .table-row-cell:hover {
-    -fx-background-color: #242933; /* Destaque ao passar o mouse */
+    -fx-background-color: #242933;
     -fx-effect: innershadow(three-pass-box, rgba(79, 70, 229, 0.1), 10, 0, 0, 0);
 }
 
