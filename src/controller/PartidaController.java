@@ -9,7 +9,7 @@ import model.Partida;
 import model.Time;
 import util.Dados;
 
-public class PartidasController {
+public class PartidaController {
 
     @FXML
     private ComboBox<Time> cbTimeA;
