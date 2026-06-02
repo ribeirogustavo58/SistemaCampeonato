@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroTimeController">
     <stylesheets>
         <URL value="@style.css" />
     </stylesheets>
@@ -37,13 +37,13 @@
                         <VBox prefWidth="240.0">
                             <children>
                                 <Label styleClass="label-field" text="Nome do Time" />
-                                <TextField promptText="Ex: Fúria" />
+                                <TextField fx:id="txtNome" promptText="Ex: Fúria" />
                             </children>
                         </VBox>
                         <VBox prefWidth="240.0" GridPane.columnIndex="1">
                             <children>
                                 <Label styleClass="label-field" text="Capitão (IGL)" />
-                                <TextField promptText="Nome do jogador" />
+                                <TextField fx:id="txtCapitao" promptText="Nome do jogador" />
                             </children>
                         </VBox>
                         <VBox prefWidth="500.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
@@ -53,8 +53,8 @@
 
                 <HBox alignment="CENTER" prefHeight="70.0" prefWidth="500.0" spacing="30.0">
                     <children>
-                        <Button styleClass="btn-secondary-ghost" text="VOLTAR" prefWidth="220.0" />
-                        <Button styleClass="btn-primary-magnetic" text="CADASTRAR" prefWidth="220.0" />
+                        <Button styleClass="btn-secondary-ghost" text="VOLTAR" prefWidth="220.0" onAction="#voltar" />
+                        <Button styleClass="btn-primary-magnetic" text="CADASTRAR" prefWidth="220.0" onAction="#cadastrar" />
                     </children>
                 </HBox>
             </children>

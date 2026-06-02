@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PartidasController">
     <stylesheets>
         <URL value="@style.css" />
     </stylesheets>
@@ -29,28 +29,33 @@
 
                 <HBox alignment="CENTER" prefHeight="90.0" prefWidth="760.0" spacing="15.0" styleClass="glass-panel" style="-fx-padding: 15; -fx-background-color: rgba(18, 21, 27, 0.8);">
                     <children>
-                        <ComboBox prefWidth="180.0" promptText="Time A" />
-                        <TextField alignment="CENTER" prefWidth="60.0" promptText="0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 10;" />
+                        <ComboBox fx:id="cbTimeA" prefWidth="180.0" promptText="Time A" />
+
+                        <TextField fx:id="txtScoreA" alignment="CENTER" prefWidth="60.0" promptText="0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 10;" />
+
                         <Label style="-fx-text-fill: #4f46e5; -fx-font-weight: bold; -fx-font-size: 24px; -fx-effect: dropshadow(three-pass-box, rgba(79, 70, 229, 0.6), 10, 0, 0, 0);" text="VS" />
-                        <TextField alignment="CENTER" prefWidth="60.0" promptText="0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 10;" />
-                        <ComboBox prefWidth="180.0" promptText="Time B" />
-                        <Button styleClass="btn-primary-magnetic" text="LANÇAR SCORE" />
+
+                        <TextField fx:id="txtScoreB" alignment="CENTER" prefWidth="60.0" promptText="0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 10;" />
+
+                        <ComboBox fx:id="cbTimeB" prefWidth="180.0" promptText="Time B" />
+
+                        <Button styleClass="btn-primary-magnetic" text="LANÇAR SCORE" onAction="#lancarScore" />
                     </children>
                 </HBox>
 
-                <TableView prefHeight="280.0" prefWidth="760.0">
+                <TableView fx:id="tblPartidas" prefHeight="280.0" prefWidth="760.0">
                     <columns>
-                        <TableColumn prefWidth="90.0" text="ID" />
-                        <TableColumn prefWidth="210.0" text="Time A" />
-                        <TableColumn prefWidth="130.0" text="Resultado" />
-                        <TableColumn prefWidth="210.0" text="Time B" />
-                        <TableColumn prefWidth="115.0" text="Status" />
+                        <TableColumn fx:id="colId" prefWidth="90.0" text="ID" />
+                        <TableColumn fx:id="colTimeA" prefWidth="210.0" text="Time A" />
+                        <TableColumn fx:id="colResultado" prefWidth="130.0" text="Resultado" />
+                        <TableColumn fx:id="colTimeB" prefWidth="210.0" text="Time B" />
+                        <TableColumn fx:id="colStatus" prefWidth="115.0" text="Status" />
                     </columns>
                 </TableView>
 
                 <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="760.0">
                     <children>
-                        <Button styleClass="btn-secondary-ghost" text="VOLTAR" prefWidth="120.0" />
+                        <Button styleClass="btn-secondary-ghost" text="VOLTAR" prefWidth="120.0" onAction="#voltar" />
                     </children>
                 </HBox>
             </children>

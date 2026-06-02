@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TabelaController">
     <stylesheets>
         <URL value="@style.css" />
     </stylesheets>
@@ -27,20 +27,20 @@
                     </children>
                 </HBox>
 
-                <TableView prefHeight="390.0" prefWidth="760.0">
+                <TableView fx:id="tblClassificacao" prefHeight="390.0" prefWidth="760.0">
                     <columns>
-                        <TableColumn prefWidth="80.0" text="Pos" />
-                        <TableColumn prefWidth="260.0" text="Equipe" />
-                        <TableColumn prefWidth="110.0" text="Pontos" />
-                        <TableColumn prefWidth="110.0" text="Vitórias" />
-                        <TableColumn prefWidth="110.0" text="Derrotas" />
-                        <TableColumn prefWidth="85.0" text="Saldo RD" />
+                        <TableColumn fx:id="colPosicao" prefWidth="80.0" text="Pos" />
+                        <TableColumn fx:id="colEquipe" prefWidth="260.0" text="Equipe" />
+                        <TableColumn fx:id="colPontos" prefWidth="110.0" text="Pontos" />
+                        <TableColumn fx:id="colVitorias" prefWidth="110.0" text="Vitórias" />
+                        <TableColumn fx:id="colDerrotas" prefWidth="110.0" text="Derrotas" />
+                        <TableColumn fx:id="colSaldoRD" prefWidth="85.0" text="Saldo RD" />
                     </columns>
                 </TableView>
 
                 <HBox alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="760.0">
                     <children>
-                        <Button styleClass="btn-secondary-ghost" text="VOLTAR" prefWidth="120.0" />
+                        <Button styleClass="btn-secondary-ghost" text="VOLTAR" prefWidth="120.0" onAction="#voltar" />
                     </children>
                 </HBox>
             </children>
